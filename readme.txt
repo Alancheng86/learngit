@@ -2,4 +2,6 @@ this is a new file
 for test use
 
 github Alancheng86
-chengyiming.2006@163.com
+  https://github.com/Alancheng86
+
+SSH can not get git@github.com
