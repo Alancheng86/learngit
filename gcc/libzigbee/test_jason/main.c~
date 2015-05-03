@@ -6,9 +6,7 @@
 #include "util.h"
 
 
-//#define BUFF_LEN		(16)
 #define BUFF_LEN		(16)
-
 
 int main(int argc,char* argv[])
 { 
