@@ -20,3 +20,25 @@ git commit -m "rm cubieboard_linux/u-boot-sunxi"
 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
 
 分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了！
+
+
+实际例子教程：
+
+alan@alan-ThinkPad-E430c:~/work/cubieboard/learngit$ gedit readme.txt 
+alan@alan-ThinkPad-E430c:~/work/cubieboard/learngit$ git add readme.txt
+alan@alan-ThinkPad-E430c:~/work/cubieboard/learngit$ git commit -m "add push origin master in it"
+[master 41b077c] add push origin master in it
+ 1 file changed, 7 insertions(+)
+alan@alan-ThinkPad-E430c:~/work/cubieboard/learngit$ git push origin master
+To https://github.com/Alancheng86/learngit.git
+   655f9ce..41b077c  master -> master
+alan@alan-ThinkPad-E430c:~/work/cubieboard/learngit$ git diff
+alan@alan-ThinkPad-E430c:~/work/cubieboard/learngit$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	readme.txt~
+nothing added to commit but untracked files present (use "git add" to track)
+alan@alan-ThinkPad-E430c:~/work/cubieboard/learngit$ 
+
